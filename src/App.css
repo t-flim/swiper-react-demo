@@ -30,8 +30,3 @@ footer {
   z-index: 1;
   color: #fff;
 }
-
-.app {
-  width: min(100%, 1000px);
-  margin: 0 auto;
-}
