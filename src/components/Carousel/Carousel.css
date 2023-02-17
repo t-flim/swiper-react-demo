@@ -8,12 +8,12 @@
 
 .slide-title {
     position: absolute;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1rem;
-    font-size: min(15vw, 15rem);
+    letter-spacing: 1.5rem;
+    font-size: clamp(3rem, 5vw + 1rem, 5rem);
     background: rgba(227, 218, 218, 0.05);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -26,4 +26,11 @@ img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    .slide-title {
+        top: 10%;
+        letter-spacing: 0.5rem;
+    }
 }
